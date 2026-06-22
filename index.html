@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Vortex Studio</h1>
+      <p>We build premium independent web systems.</p>
+    </div>
+    <div class="row-box">
+      <img src="logo.jpg" width="300" />
+      <a href="https://bluevalleyk12.org">Visit Prairie star middle school</a>
+    </div>
+    <div>
+      <h3>Vortex Quote Calculator</h3>
+      <p>Enter number of pages needed:</p>
+      <input type="number" id="pageCount" placeholder="0" min="1" />
+      <p
+        id="errorWarning"
+        style="color: #ff4a4a; font-weight: bold; margin: 5px 0; display: none"
+      >
+        ⚠️ Please enter a page number greater than 0!
+      </p>
+      <p>Select Package Type:</p>
+      <select id="packageType">
+        <option value="basic">Basic Design ($100/page)</option>
+        <option value="premium">Premium Design ($200/page)</option>
+      </select>
+
+      <p>Choose Add-ons:</p>
+      <label
+        ><input type="checkbox" id="seoCheck" /> SEO Optimization (+$50)</label
+      ><br />
+      <label
+        ><input type="checkbox" id="ecomCheck" /> E-commerce Shop (+$150)</label
+      >
+      <button id="calcBtn">Calculate Price</button>
+      <button id="resetBtn" style="background-color: #555555; margin-top: 5px">
+        Reset Form
+      </button>
+      <h2 id="totalPriceDisplay">Total: $0</h2>
+    </div>
+    <input type="text" id="clientName" placeholder="Your Name" />
+    <button id="submitBtn">Submit Request</button>
+    <script src="script.js"></script>
+  </body>
+</html>

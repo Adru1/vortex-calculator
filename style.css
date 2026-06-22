@@ -1,0 +1,96 @@
+body {
+  background-color: #1e1e1e;
+}
+h1 {
+  color: #1e1e1e;
+  font-family: "Segoe UI", sans-serif;
+  padding: 10px;
+  margin: 20px;
+}
+p {
+  color: #444444;
+  font-family: "Segoe UI", sans-serif;
+}
+div {
+  /* Keep whatever background or padding you already had, then make sure these lines are inside */
+  background-color: #252526;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 350px;
+  margin: 20px auto;
+
+  /* Add these two premium lines right here! */
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 15px rgba(0, 122, 204, 0.2);
+  border: 1px solid #3c3c3c;
+}
+.row-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+select,
+input {
+  display: block;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #cccccc;
+  font-family: "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+button {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0062a3;
+}
+#resetBtn:hover {
+  background-color: #777777 !important;
+  transition: background-color 0.2s ease;
+}
+h3 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+h2#totalPriceDisplay {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+div p {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #aaaaaa;
+  font-family: "Segoe UI", sans-serif;
+}
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+}
